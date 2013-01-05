@@ -1,3 +1,11 @@
+CHANGES BY FMMT666:
+-------------------
+
+*01/2013*
+
+* added G666, online Z-axis adjustment during printing (see configuration.h)
+
+
 WARNING: 
 --------
 THIS IS RELEASE CANDIDATE 2 FOR MARLIN 1.0.0
