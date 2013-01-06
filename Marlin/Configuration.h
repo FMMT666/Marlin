@@ -352,7 +352,6 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 //#define SF_ARC_FIX
 
 
-
 // G666, online height adjustment while printing; added by FMMT666(ASkr)
 // USAGE:
 //   G666 Z0.1
