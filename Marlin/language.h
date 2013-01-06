@@ -37,6 +37,13 @@
 
 // LCD Menu Messages
 
+  // Prepare Menu; added by FMMT666(ASkr)
+  #define MSG_PARK    " Park XY"
+  #define MSG_HOME_XY " Auto Home XY"
+  #define MSG_HOME_Z  " Auto Home Z"
+  #define MSG_FANON   " Fan On"
+  #define MSG_FANOFF  " Fan Off"
+
   // Tune menu; added by FMMT666(ASkr)
   #define MSG_G666_UP   " Tune Z Axis Up"
   #define MSG_G666_DOWN " Tune Z Axis Down"
@@ -506,6 +513,13 @@
 #if LANGUAGE_CHOICE == 4
 
 // LCD Menu Messages
+
+  // Prepare Menu; added by FMMT666(ASkr)
+  #define MSG_PARK    " Parken XY"
+  #define MSG_HOME_XY " Nullpunkt XY"
+  #define MSG_HOME_Z  " Nullpunkt Z"
+  #define MSG_FANON   " Lüfter Ein"
+  #define MSG_FANOFF  " Lüfter Aus"
 
   // Tune menu; added by FMMT666(ASkr)
   #define MSG_G666_UP   " Z-Achse nach oben"

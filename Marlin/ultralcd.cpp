@@ -272,6 +272,14 @@ static void lcd_prepare_menu()
 {
     START_MENU();
     MENU_ITEM(back, MSG_MAIN, lcd_main_menu);
+
+		// added by FMMT666(ASkr)
+    MENU_ITEM(gcode, MSG_PARK, PSTR(CMD_PARK));       // park position; least stress for bowden, transportation or best position to load/unload
+    MENU_ITEM(gcode, MSG_HOME_XY, PSTR("G28 X0 Y0")); // homing without Z if nozzle is cold and full of plastics
+    MENU_ITEM(gcode, MSG_HOME_Z, PSTR("G28 Z0"));     // comes in handy while calibrating the machine
+    MENU_ITEM(gcode, MSG_FANON, PSTR("M106"));
+    MENU_ITEM(gcode, MSG_FANOFF, PSTR("M107"));
+
 #ifdef SDSUPPORT
     //MENU_ITEM(function, MSG_AUTOSTART, lcd_autostart_sd);
 #endif

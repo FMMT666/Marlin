@@ -373,6 +373,15 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 #endif
 
 
+// Park XY; added by FMMT666(ASkr)
+#ifdef ULTIPANEL
+  #define CMD_PARK "G01 X60 Y60 F6000"  // Where should the printhead be parked if the menu option "Park XY" is
+                                        // selected from the "Prepare" menu.
+                                        // Allows quick movements for transportation or storage.
+                                        // E.g. "G01 X60 Y60" for Ultimaker. This causes least stress for the bowden
+                                        // and ais the best position to load/unload the filament.
+#endif
+
 
 #include "Configuration_adv.h"
 #include "thermistortables.h"
