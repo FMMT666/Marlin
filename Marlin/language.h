@@ -39,8 +39,8 @@
 
   // Prepare Menu; added by FMMT666(ASkr)
   #define MSG_PARK    " Park XY"
-  #define MSG_HOME_XY " Auto Home XY"
-  #define MSG_HOME_Z  " Auto Home Z"
+  #define MSG_HOME_XY " Home XY"
+  #define MSG_HOME_Z  " Home Z"
   #define MSG_FANON   " Fan On"
   #define MSG_FANOFF  " Fan Off"
 
@@ -189,7 +189,7 @@
 	#define MSG_SD_ERR_WRITE_TO_FILE "error writing to file"
 	#define MSG_SD_CANT_ENTER_SUBDIR "Cannot enter subdir: "
 
-	#define MSG_STEPPER_TO_HIGH "Steprate to high: "
+	#define MSG_STEPPER_TO_HIGH "Steprate too high: "
 	#define MSG_ENDSTOPS_HIT "endstops hit: "
 	#define MSG_ERR_COLD_EXTRUDE_STOP " cold extrusion prevented"
 	#define MSG_ERR_LONG_EXTRUDE_STOP " too long extrusion prevented"
@@ -527,9 +527,9 @@
 
 	#define WELCOME_MSG MACHINE_NAME " Bereit."
 
-	#define MSG_SD_INSERTED      "SDKarte erkannt"
-	#define MSG_SD_REMOVED       "SDKarte entfernt"
-	#define MSG_MAIN             "Hauptmneü"
+	#define MSG_SD_INSERTED      "SD-Karte erkannt"
+	#define MSG_SD_REMOVED       "SD-Karte entfernt"
+	#define MSG_MAIN             "Hauptmenü"
 	#define MSG_AUTOSTART        "Autostart"
 	#define MSG_DISABLE_STEPPERS "Stepper abschalten"
 	#define MSG_AUTO_HOME        "Auto Nullpunkt"
@@ -579,8 +579,8 @@
 	#define MSG_WATCH            "Beobachten"
 	#define MSG_TEMPERATURE      "Temperatur"
 	#define MSG_MOTION           "Bewegung"
-	#define MSG_STORE_EPROM      "EPROM speichern"
-	#define MSG_LOAD_EPROM       "EPROM laden"
+	#define MSG_STORE_EPROM      "EEPROM speichern"
+	#define MSG_LOAD_EPROM       "EEPROM laden"
 	#define MSG_RESTORE_FAILSAFE "Standardkonfig."
 	#define MSG_REFRESH          "Aktualisieren"
 	#define MSG_PREPARE          "Vorbereitung"
@@ -589,11 +589,11 @@
 	#define MSG_PAUSE_PRINT      "Druck anhalten"
 	#define MSG_RESUME_PRINT     "Druck fortsetz"
 	#define MSG_STOP_PRINT       "Druck stoppen"
-	#define MSG_CARD_MENU        "SDKarten Menü"
-	#define MSG_NO_CARD          "Keine SDKarte"
+	#define MSG_CARD_MENU        "SD-Karten Menü"
+	#define MSG_NO_CARD          "Keine SD-Karte"
 	#define MSG_DWELL            "Warten..."		
 	#define MSG_USERWAIT         "Warte auf Nutzer..."
-    #define MSG_RESUMING         "Druck fortsetzung"
+	#define MSG_RESUMING         "Druck fortsetzen"
 	#define MSG_NO_MOVE          "Kein Zug."
 	#define MSG_PART_RELEASE     "Stepper tlw frei"
 	#define MSG_KILLED           "KILLED"

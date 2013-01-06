@@ -379,7 +379,7 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
                                         // selected from the "Prepare" menu.
                                         // Allows quick movements for transportation or storage.
                                         // E.g. "G01 X60 Y60" for Ultimaker. This causes least stress for the bowden
-                                        // and ais the best position to load/unload the filament.
+                                        // and is the best position to load/unload the filament.
 #endif
 
 
