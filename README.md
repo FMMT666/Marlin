@@ -3,7 +3,8 @@ CHANGES BY FMMT666:
 
 *01/2013*
 
-* added G666, online Z-axis adjustment during printing (see configuration.h)
+- added G666, online Z-axis adjustment during printing (see configuration.h)
+- added several useful commands to the LCD "Prepare" menu
 
 
 WARNING: 
