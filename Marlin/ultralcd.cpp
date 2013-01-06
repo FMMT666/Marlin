@@ -245,6 +245,13 @@ static void lcd_tune_menu()
 {
     START_MENU();
     MENU_ITEM(back, MSG_MAIN, lcd_main_menu);
+
+
+    // G666; Online height adjustment during printing (LCD interface); added by FMMT666(ASkr)
+    MENU_ITEM(gcode, MSG_G666_UP,   PSTR(CMD_G666_UP));
+    MENU_ITEM(gcode, MSG_G666_DOWN, PSTR(CMD_G666_DOWN));
+
+
     MENU_ITEM_EDIT(int3, MSG_SPEED, &feedmultiply, 10, 999);
     MENU_ITEM_EDIT(int3, MSG_NOZZLE, &target_temperature[0], 0, HEATER_0_MAXTEMP - 15);
 #if TEMP_SENSOR_1 != 0

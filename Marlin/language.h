@@ -36,6 +36,11 @@
 #if LANGUAGE_CHOICE == 1
 
 // LCD Menu Messages
+
+  // Tune menu; added by FMMT666(ASkr)
+  #define MSG_G666_UP   " Tune Z Axis Up"
+  #define MSG_G666_DOWN " Tune Z Axis Down"
+	
 	#define WELCOME_MSG MACHINE_NAME " Ready."
 	#define MSG_SD_INSERTED "Card inserted"
 	#define MSG_SD_REMOVED "Card removed"
@@ -501,6 +506,10 @@
 #if LANGUAGE_CHOICE == 4
 
 // LCD Menu Messages
+
+  // Tune menu; added by FMMT666(ASkr)
+  #define MSG_G666_UP   " Z-Achse nach oben"
+  #define MSG_G666_DOWN " Z-Achse nach unten"
 
 	#define WELCOME_MSG MACHINE_NAME " Bereit."
 

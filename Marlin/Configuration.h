@@ -351,6 +351,30 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 // SF send wrong arc g-codes when using Arc Point as fillet procedure
 //#define SF_ARC_FIX
 
+
+
+// G666, online height adjustment while printing; added by FMMT666(ASkr)
+// USAGE:
+//   G666 Z0.1
+// This will move the Z-Axis up 0.1mm, but it also sets the new machine height to the previous value.
+// Larger values than G666_LIMIT_UP or _DOWN will be clamped to these max. settings.
+// G666 is equal to turning the Z-spindle by hand.
+// Especially useful if the machine lays  down several skirt outlines before it starts
+// with printing the real object.
+// Little drawback: It still is a buffered command, so it might take a while until it gets active.
+// WARNING: Z-AXIS MAY MOVE BEYOND LIMITS!
+// By setting _LIMIT_UP or _DOWN to 0, movement in that direction will not be executed.
+#define G666_ENABLED                  // activate online height adjustment
+#define G666_LIMIT_UP    0.1          // must be >= 0; limit movement away from bed
+#define G666_LIMIT_DOWN -0.1          // must be <= 0; limit movement towards bed
+
+#ifdef ULTIPANEL
+  #define CMD_G666_UP   "G666 Z0.05"  // LCD command for tuning the Z-axis in direction UP
+  #define CMD_G666_DOWN "G666 Z-0.05" // LCD command for tuning the Z-axis n direction DOWN
+#endif
+
+
+
 #include "Configuration_adv.h"
 #include "thermistortables.h"
 
