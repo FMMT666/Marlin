@@ -7,6 +7,7 @@ CHANGES BY FMMT666:
 - added several useful commands to the LCD "Prepare" menu
 
 
+
 WARNING: 
 --------
 THIS IS RELEASE CANDIDATE 2 FOR MARLIN 1.0.0
