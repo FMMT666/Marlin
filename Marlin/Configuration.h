@@ -368,8 +368,8 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 #define G666_LIMIT_DOWN -0.1          // must be <= 0; limit movement towards bed
 
 #ifdef ULTIPANEL
-  #define CMD_G666_UP   "G666 Z0.05"  // LCD command for tuning the Z-axis in direction UP
-  #define CMD_G666_DOWN "G666 Z-0.05" // LCD command for tuning the Z-axis n direction DOWN
+  #define CMD_G666_UP   "G666 Z0.10"  // LCD command for tuning the Z-axis in direction UP
+  #define CMD_G666_DOWN "G666 Z-0.10" // LCD command for tuning the Z-axis n direction DOWN
 #endif
 
 
