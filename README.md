@@ -4,8 +4,12 @@ CHANGES BY FMMT666:
 *01/2013*
 
 - added G666, online Z-axis adjustment during printing (see configuration.h)
-- added several useful commands to the LCD "Prepare" menu
-
+  - also available via "tune menu" during print
+- added several useful commands to the LCD "Prepare" menu:
+  - park machine
+  - home XY only
+  - home Z only
+  - fan on/off
 
 
 WARNING: 
