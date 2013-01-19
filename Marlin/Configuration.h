@@ -364,8 +364,8 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 // WARNING: Z-AXIS MAY MOVE BEYOND LIMITS!
 // By setting _LIMIT_UP or _DOWN to 0, movement in that direction will not be executed.
 #define G666_ENABLED                  // activate online height adjustment
-#define G666_LIMIT_UP    0.1          // must be >= 0; limit movement away from bed
-#define G666_LIMIT_DOWN -0.1          // must be <= 0; limit movement towards bed
+#define G666_LIMIT_UP    0.1          // must be >= 0; limit movement away from bed (single G666 command)
+#define G666_LIMIT_DOWN -0.1          // must be <= 0; limit movement towards bed   (single G666 command)
 
 #ifdef ULTIPANEL
   #define CMD_G666_UP   "G666 Z0.10"  // LCD command for tuning the Z-axis in direction UP
